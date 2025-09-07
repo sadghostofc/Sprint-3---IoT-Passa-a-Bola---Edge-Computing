@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Bola Inteligente IoT</title>
+  <script src="https://unpkg.com/mqtt/dist/mqtt.min.js"></script>
+  <style>
+    body { font-family: Arial, sans-serif; background: #f5f7fa; text-align: center; padding: 20px; }
+    h1 { color: #2c3e50; }
+    .card { display: inline-block; margin: 10px; padding: 20px; background: white; border-radius: 12px; box-shadow: 0 3px 6px rgba(0,0,0,0.2);}
+    .value { font-size: 2em; color: #27ae60; }
+  </style>
+</head>
+<body>
+  <h1>🏐 Bola Inteligente IoT</h1>
+  <div class="card">
+    <h2>Passes</h2>
+    <div id="passes" class="value">0</div>
+  </div>
+  <div class="card">
+    <h2>Velocidade (km/h)</h2>
+    <div id="velocidade" class="value">0</div>
+  </div>
+  <div class="card">
+    <h2>Distância (m)</h2>
+    <div id="distancia" class="value">0</div>
+  </div>
+
+  <script>
+    const client = mqtt.connect("wss://broker.hivemq.com:8884/mqtt");
+
+    client.on("connect", () => {
+      console.log("Conectado ao HiveMQ");
+      client.subscribe("passa_a_bola/bola01");
+    });
+
+    client.on("message", (topic, message) => {
+      const data = JSON.parse(message.toString());
+      document.getElementById("passes").innerText = data.passes;
+      document.getElementById("velocidade").innerText = data.velocidade;
+      document.getElementById("distancia").innerText = data.distancia.toFixed(1);
+    });
+  </script>
+</body>
+</html>
