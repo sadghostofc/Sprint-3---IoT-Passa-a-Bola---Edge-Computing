@@ -33,11 +33,12 @@ A ideia é transformar a bola em um dispositivo inteligente capaz de enviar info
 🔗 Abra a Simulação no Wokwi: [https://wokwi.com/projects/441397443781866497] 
 
 1. Clique em **Start Simulation**.  
-2. Abra o arquivo `index.html` no navegador.  
+2. Abra o arquivo `index.html` no navegador ou o link do site no GitHub pages: [https://sadghostofc.github.io/Sprint-3---IoT-Passa-a-Bola---Edge-Computing/] 
 3. Veja os dados em tempo real:  
    - **Passes** → cada clique no botão físico.  
    - **Velocidade** → ajustada pelo MPU6050 + potenciômetro.  
-   - **Distância** → calculada automaticamente.  
+   - **Distância** → calculada automaticamente.
+
 ## 👨‍💻 Integrantes
 
 * Daniel Laureano da Luz - RM565899
