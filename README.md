@@ -45,4 +45,4 @@ A ideia é transformar a bola em um dispositivo inteligente capaz de enviar info
 * Gabriel Del Sole Speck - RM562513
 * Marcos Antonio da Silva - RM566451
 * Paulo Gustavo Pessoa da Silva - RM566194
-* Rone Cruz Santos - RM566558# Sprint-3---IoT-Passa-a-Bola---Edge-Computing
+* Rone Cruz Santos - RM566558
