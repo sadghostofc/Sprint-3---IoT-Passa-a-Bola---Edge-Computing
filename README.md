@@ -46,3 +46,7 @@ A ideia é transformar a bola em um dispositivo inteligente capaz de enviar info
 * Marcos Antonio da Silva - RM566451
 * Paulo Gustavo Pessoa da Silva - RM566194
 * Rone Cruz Santos - RM566558
+
+## ▶️ Video do Projeto
+
+- Link: [https://youtu.be/B_ca2jLOPoY]
